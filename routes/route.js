@@ -30,4 +30,8 @@ router.post('/comment/new', authenticateToken, newComment);
 router.get('/comments/:id', authenticateToken, getComments);
 router.delete('/comment/delete/:id', authenticateToken, deleteComment);
 
+router.get('/hi', (req, res) => {
+    res.send('Hi');
+});
+
 export default router;
